@@ -1,0 +1,184 @@
+
+/****************************/
+/* LOCAL CSS                */
+/****************************/
+
+/* Put your custom CSS and CSS overrides in this file and  */
+/* rename it local.css.  By restricting your CSS changes   */
+/* to local.css, your changes will not be overwritten when */
+/* upgrading to a new version of this theme.  You can also */
+/* use a local-rtl.css file for the equivalent in RTL.     */
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+    background: url("../images/frame.jpg") no-repeat fixed center center rgba(0, 0, 0, 0);
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+#page-wrapper {
+  min-height: 100%;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1400px;
+  background-color: green;
+}
+#name-and-slogan {
+    margin: 2em 0 0 15px;
+    padding: 26px 0 0;
+}
+#header {
+  background: transparent;
+}
+.field-name-field-image img {
+  border-radius: 5px;
+}
+.region-header, .region-header a, .region-header li a.active, #name-and-slogan, #name-and-slogan a, #secondary-menu-links li a {
+    color: #000;
+}
+#page-wrapper, #footer-wrapper {
+    background: none repeat scroll 0 0 transparent;
+}
+#main p {
+  max-width: 49em;
+  text-align: justify;
+  /*-ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;*/
+}
+#main ul li {
+  font-size: 1.25em;
+  /*text-shadow: 1px 1px 3px #333;*/
+}
+/* Downloads */
+.field-name-field-autor {
+    font-style: italic;
+    margin-bottom: 1em;
+}
+.field-name-field-datei {
+    margin-bottom: 2.4em;
+}
+/* Referenzen */
+
+.page-node-6 .field-name-body .even,
+.page-node-8 .field-name-body .even {
+  float: left;
+  width: 100%;
+  margin-right: 0;
+}
+.page-node-6 .field-name-body .odd,
+.page-node-8 .field-name-body .odd {
+  float: left;
+  width: 100%;
+  margin-right: 0;
+}
+/* Methoden */
+.box {
+    background: #23aeff;
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+    display: block;
+    float: left;
+    font-size: 1.25em;
+    margin-right: 5%;
+    padding: 1em 0;
+    width: 95%;
+    position: relative;
+}
+.box:after {
+  content: "\f061";
+  font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    /*--adjust as necessary--*/
+    color: #000;
+    font-size: 30px;
+    padding-right: 0.5em;
+    position: absolute;
+    top: 12px;
+    right: -25%;
+}
+.box.last:after {
+  content: "\f00c";
+}
+/* Mobile Menu */
+.mean-container .mean-bar {
+  background: rgba(0,0,0,.7);
+}
+.mean-container .mean-nav {
+  background: rgba(0,0,0,.4);
+}
+@media all and (min-width: 560px) {
+  .box {
+      float: left;
+      margin-right: 5%;
+      width: 20%;
+  }
+  .region-content ul {
+    padding-left: 1.2em;
+  }
+  .region-content ul li {
+    list-style: none;
+  }
+  .region-content ul li:before {
+    content: '\f00c'; /* FontAwesome char code inside the '' */
+    font-family: FontAwesome; /* FontAwesome or whatever */
+    display: inline-block;
+    width: 1.5em; /* same as padding-left set on li */
+    margin-left: -1.2em; /* same as padding-left set on li */
+  }​
+}
+@media all and (min-width: 851px) {
+  html.front {
+  background: url("../images/frame.jpg") no-repeat fixed center center rgba(0, 0, 0, 0);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+  body.front #main-wrapper {
+    margin-left: 18%;
+    margin-bottom: 20%;
+    width: 75%;
+    margin: 0 auto 20% auto;
+  }
+  body.front #main {
+    width: 85%;
+    margin-left: 15%;
+  }
+  .front #main-menu-links a,
+  .front h1, .front h2, .front h3, .front h4, .front h5, .front h6, .front p {
+    color: #000;
+    text-shadow: 1px 1px 3px #ccc;
+  }
+  .region-footer-firstcolumn,
+  .region-footer-secondcolumn,
+  .region-footer-thirdcolumn,
+  .region-footer-fourthcolumn {
+    float: right;
+  }
+  .webform-layout-box.horiz > *, .webform-layout-box.equal > * {
+    width: 40%;
+  }
+  input.form-text, input.form-tel, input.form-email, input.form-url, input.form-search, input.form-number, input.form-color, textarea.form-textarea, select.form-select {
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.6);
+  }
+  .page-node-6 .field-name-body .even,
+  .page-node-8 .field-name-body .even {
+    float: left;
+    width: 45%;
+    margin-right: 5%;
+  }
+  .page-node-6 .field-name-body .odd,
+  .page-node-8 .field-name-body .odd {
+    float: left;
+    width: 45%;
+    margin-right: 5%;
+  }
+}

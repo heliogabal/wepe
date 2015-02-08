@@ -1,0 +1,50 @@
+name = Welpe & Peters
+description = A flexible, recolorable theme with many regions and a responsive, mobile-first layout.
+version = VERSION
+core = 7.x
+
+;base theme = responsive_bartik
+
+stylesheets[all][] = css/layout.css
+stylesheets[all][] = css/style.css
+stylesheets[all][] = css/colors.css
+stylesheets[all][] = css/local.css
+stylesheets[print][] = css/print.css
+
+scripts[] = js/collapsible-menu.js
+scripts[] = js/hyphenate.js
+
+regions[header] = Header
+regions[help] = Help
+regions[page_top] = Page top
+regions[page_bottom] = Page bottom
+regions[highlighted] = Highlighted
+
+regions[featured] = Featured
+regions[content] = Content
+regions[sidebar_first] = Sidebar first
+regions[sidebar_second] = Sidebar second
+
+regions[triptych_first] = Triptych first
+regions[triptych_middle] = Triptych middle
+regions[triptych_last] = Triptych last
+
+regions[footer_firstcolumn] = Footer first column
+regions[footer_secondcolumn] = Footer second column
+regions[footer_thirdcolumn] = Footer third column
+regions[footer_fourthcolumn] = Footer fourth column
+regions[footer] = Footer
+
+settings[shortcut_module_link] = 0
+
+; For Picture 2.x
+;breakpoints[desk] = (min-width: 851px)
+;breakpoints[tablet] = (min-width: 560px) and (max-width: 850px)
+;breakpoints[mobile] = (min-width: 0px) and (max-width: 559px)
+
+; Information added by Drupal.org packaging script on 2014-10-15
+version = "7.x-1.0"
+core = "7.x"
+project = "welpe_peters"
+datestamp = "1413392482"
+
