@@ -586,6 +586,7 @@ ul#main-menu-links li:first-of-type a {
 #main {
   margin-top: 20px;
   margin-bottom: 40px;
+  background-color: rgba(255,255,255,.7);
 }
 #main p {
   font-size: 1.25em;
@@ -1827,7 +1828,7 @@ a#menu-toggle:after {
     font-size: .75em;
   }
   #main-menu-links {
-    font-size: 1.4em;
+    font-size: 1.3em;
   }
 }
 @media all and (min-width: 1279px) {
@@ -1835,7 +1836,7 @@ a#menu-toggle:after {
     font-size: .875em;
   }
   #main-menu-links {
-    font-size: 1.5em;
+    font-size: 1.4em;
   }
   body.front #name-and-slogan {
     margin: 8em auto 0;
